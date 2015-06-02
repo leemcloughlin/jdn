@@ -71,3 +71,15 @@ func TestJulian005(t *testing.T) {
 func TestJulian006(t *testing.T) {
 	testJulian(t, -4000, time.December, 31) // Uruk 1st countdown to new years... less probably
 }
+
+func ExampleToNumber() {
+	jd := ToNumber(2012, time.August, 17) // Day I met my fiancé
+	fmt.Println(jd)
+	// Output: 2456157
+}
+
+func ExampleFromNumber() {
+	y, m, d := FromNumber(2456157) // Day I met my fiancé
+	fmt.Printf("%d %s %d\n", y, m, d)
+	// Output: 2012 August 17
+}

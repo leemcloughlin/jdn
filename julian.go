@@ -42,7 +42,7 @@ func ToNumber(year int, month time.Month, day int) (julianDay int) {
 }
 
 // FromNumber converts a Julian Day Number to a year, month, day in the
-// appropriate calendar.
+// appropriate calendar (Julian or Gregorian).
 func FromNumber(julianDay int) (year int, month time.Month, day int) {
 	if julianDay >= 2299161 {
 		// Gregorian calendar starting from October 15, 1582
