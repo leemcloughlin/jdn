@@ -13,4 +13,4 @@ go get github.com/leemcloughlin/jdn
 
 For documentation including examples please see:
 
-http://godoc.org/github.com/leemcloughlin/jdn
+https://pkg.go.dev/github.com/leemcloughlin/jdn
